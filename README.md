@@ -1,15 +1,11 @@
-# BroTrack
+# BROTRACK
 
 <p align="center">
   <img src="Resources/brotrack-banner.png" alt="BroTrack Banner">
 </p>
 
 <p align="center">
-  <strong>Registra. Consulta. Calcula.</strong>
-</p>
-
-<p align="center">
-  Aplicación web de uso personal para registrar, consultar y realizar operaciones sobre las carreras realizadas durante la jornada laboral.
+  Aplicación web de solo uso personal para registrar, consultar y realizar operaciones sobre las carreras realizadas durante mi jornada laboral.
 </p>
 
 ---
@@ -63,6 +59,4 @@ La información será almacenada en una base de datos MySQL para poder conservar
 | MySQL | Base de datos |
 | JDBC | Conexión entre Java y MySQL |
 | JavaScript | Interacciones y funcionalidades del lado del cliente |
-
-El uso de JavaScript podrá ampliarse dependiendo de las necesidades que surjan durante el desarrollo.
 ---
