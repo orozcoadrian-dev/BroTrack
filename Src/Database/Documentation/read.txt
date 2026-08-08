@@ -1,0 +1,42 @@
+Documentación general sobre la base de datos:
+
+-- Nombre de la base de datos ---
+bro_track
+
+--- 1. Atributo tipo --- 
+este es esencial para identificar si la carrera fue de ida (me llevo de la casa al trabajo) o de vuelta (del trabajo a la casa).
+
+Valores permitidos:
+    * Ida.
+    * Vuelta.
+
+--- 2. Atributo estado ---
+este contiene si la carrera fue cancelada o realizada con éxito, para manejar una íntegra trazabilidad.
+
+Valores permitidos:
+    * Realizada.
+    * Cancelada.
+    * No planeada.
+
+--- 3. Atributo motivo ---
+este es vital para justificar por qué no sé realizó una carrera y a la hora de los pagos poder ser justos.
+
+Valores permitidos: 
+    * Mi papá me llevó al trabajo.
+    * Mi papá me llevó a casa.
+    * No fui convocado a trabajar.
+
+--- 4. Atributo mes  ---
+con este atributo podré rastrear directamente qué mes se realizaron carreras, facilitando una búsqueda más cómoda visualmente.
+
+Valores permitidos: 
+    * Todos los meses vigentes reales del calendario.
+
+--- 5. Número de quincena ---
+con este atributo podré calcular correctamente el pago que debo hacer en un rango definido. Siendo como un ciclo.
+
+Valores permitidos: 
+    * 1
+    * 2
+
+*: Esta documentación es experimental, aún tendrá cambios en el momento de desarrollo.

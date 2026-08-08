@@ -1,2 +1,4 @@
 # Ignorando toda la carpeta Src
-Src/
+Src/Backend/
+Src/Frontend/
+!Src/Database
