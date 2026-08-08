@@ -1,5 +1,3 @@
-# BROTRACK
-
 <p align="center">
   <img src="Resources/brotrack-banner.png" alt="BroTrack Banner">
 </p>
