@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BroTrack - Home</title>
+    <link rel="stylesheet" href="./Css/Styles/index.css">
+    <link rel="icon" href="./Assets/Icons/brotrack-logo.ico" type="image/ico">
+
+</head>
+
+<body>
+    <header class="header">
+        <div class="header__inner">
+            <a href="#home" class="header__brand">BroTrack</a>
+            <nav class="nav">
+                <ul class="nav__list">
+                    <li class="nav__item"><a class="nav__link" href="#home">Inicio</a></li>
+                    <li class="nav__item"><a class="nav__link" href="#what">Funciones</a></li>
+                    <li class="nav__item"><a class="nav__link" href="#history">Historia</a></li>
+                    <li class="nav__item"><a class="nav__link" href="#developer">Desarrollador</a></li>
+                </ul>
+            </nav>
+            <div class="header__actions">
+                <a href="#start" class="btn btn--ghost header__btn">BroTrackear!</a>
+                <a href="/register" class="btn btn--primary header__btn">Registrarme</a>
+            </div>
+            <button class="header__toggle" aria-label="Abrir menú">☰</button>
+        </div>
+    </header>
+
+    <main>
+        <section id="home" class="hero">
+            <div class="hero__overlay"></div>
+            <div class="hero__content">
+                <h1 class="hero__title">Controla y monitorea tus carreras con BroTrack</h1>
+                <p class="hero__subtitle">Soluciones limpias para seguimiento, análisis y crecimiento de comunidades.
+                </p>
+                <div class="hero__ctas">
+                    <a class="btn btn--primary" href="#start">Empezar BroTrack</a>
+                    <a class="btn btn--ghost" href="/register">Registrarse</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="purpose" class="section section--purpose">
+            <div class="container">
+                <h2 class="section__title">Propósito</h2>
+                <p class="section__text">El propósito de esta aplicación es centralizar y almacenar en una base de datos
+                    el registro detallado de las carreras realizadas por mi hermano. La plataforma busca facilitar la
+                    consulta de información clave, permitiendo calcular cuántos viajes se completaron o se perdieron,
+                    evaluar el rendimiento por meses o ciclos específicos y mantener un control financiero y operativo
+                    claro y organizado.El propósito de este proyecto es construir una plataforma centralizada para
+                    almacenar en una base de datos el registro diario y preciso de las carreras realizadas por mi
+                    hermano. El sistema está diseñado para ofrecer una gestión clara y organizada, permitiendo filtrar y
+                    consultar métricas clave por meses, semanas o ciclos específicos de trabajo. Además, facilitará el
+                    análisis operativo al calcular automáticamente el total de carreras completadas, identificar los
+                    viajes perdidos o no concretados y llevar un balance preciso de los ingresos acumulados en cada
+                    periodo.</p>
+            </div>
+        </section>
+
+        <section id="what" class="section section--what">
+            <div class="container grid">
+                <div class="card card--feature">
+                    <h3 class="card__title">Registro Rápido</h3>
+                    <p class="card__text">Ingresa cada carrera al instante. Un formulario simple para guardar datos
+                        clave como la tarifa, el punto de inicio y el destino, directamente en la base de datos
+                        centralizada.</p>
+                </div>
+                <div class="card card--feature">
+                    <h3 class="card__title">Historial y Ciclos</h3>
+                    <p class="card__text">Consulta todos los viajes realizados y perdidos. Visualiza y filtra la
+                        actividad por mes, semana o ciclo de trabajo específico para mantener un control claro y
+                        organizado de cada trayecto.</p>
+                </div>
+                <div class="card card--feature">
+                    <h3 class="card__title">Balances y Métricas</h3>
+                    <p class="card__text">Obtén resúmenes automáticos. Calcula el total de carreras completadas,
+                        ingresos acumulados y detecta los servicios perdidos o cancelados para analizar el rendimiento
+                        operativo en tiempo real.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="history" class="section section--history">
+            <div class="container">
+                <h2 class="section__title">Nuestra historia</h2>
+                <p class="section__text">La rutina del día a día siempre llevaba un ritmo acelerado. Mientras para la
+                    mayoría la jornada transcurría entre pausas de café o pausas breves frente al escritorio, para mí
+                    las ocupaciones no daban tregua. Entre entregas, pendientes y responsabilidades constantes, moverme
+                    de un lado a otro era una necesidad diaria, y ahí es donde entraba mi hermano Iván, quien al volante
+                    de su vehículo se encargaba de hacerme las carreras para llevarme y traerme del trabajo en medio del
+                    denso tráfico de la ciudad. El problema nunca fue el transporte; el verdadero caos empezaba cuando intentaba llevar la cuenta de
+                    los viajes.
+                    <br>
+                    <br>
+                    Durante meses, mi método para recordar cuántas carreras me había hecho Iván, qué rutas habíamos cubierto y cuánto sumaba la cuenta al final del ciclo consistió en anotar datos sueltos en bloques de notas o confiarme a una maraña de chats de WhatsApp. Al final del mes o de cada ciclo de pago, sentarme a revisar las fechas, calcular las tarifas acumuladas y saber el saldo exacto se convertía en un rompecabezas tedioso. Entre tantas ocupaciones diarias, las cuentas sencillamente se me olvidaban o no cuadraban, y el desorden le ganaba a la buena intención. Fue en uno de esos días de carreras apresuradas hacia la oficina cuando hablé directamente con él sobre la situación.
+                    <br>
+                    <br>
+                    | "Necesito un sistema simple, algo donde pueda registrar en dos toques cada viaje que me haces al trabajo, sin rodeos, sin olvidos ni planillas raras."
+                    <br>
+                    <br>
+                    Ahí nació la idea. No hacía falta construir un monstruo corporativo ni una plataforma sobrecargada de funciones inútiles. Lo que se necesitaba era una herramienta hecha a la medida, rápida, ligera y diseñada específicamente para llevar una base de datos clara y directa de nuestras carreras. El proceso de desarrollo comenzó de inmediato. Aprovechando asistentes de inteligencia artificial para agilizar la generación de código, estructurar la base de datos y pulir la arquitectura tanto en el frontend como en el backend, la aplicación empezó a tomar forma a pasos agigantados en cuestión de días.
+                    <br>
+                    <br>
+                    El concepto principal era claro: <strong>BroTrack</strong>, un centro de control web optimizado para el registro de viajes en tiempo real y el cálculo preciso por meses o ciclos.
+                    <br>
+                    <br>
+                    Pero una herramienta de trabajo diseñada para resolver un problema de control diario no podía construirse de cualquier manera. La interfaz debía ser funcional y cómoda para usar en cualquier momento. Se descartaron los tonos azules y morados genéricos y se apostó por una estética en Light Mode de color menta: un fondo grafito profundo combinado con acentos en un verde suave. De este modo, la pantalla no molestaba a la vista en absoluto y las opciones principales destacaban de inmediato para registrar una carrera en segundos. Lo que empezó como una conversación informal sobre cómo resolver un problema cotidiano de organización terminó convirtiéndose en un sistema sólido, moderno y escalable. BroTrack demostró que cuando la tecnología se enfoca en resolver una necesidad real con las herramientas adecuadas, incluso el control de las carreras de mi hermano al trabajo puede transformarse en una experiencia ágil, clara y eficiente.
+                </p>
+            </div>
+        </section>
+
+        <section id="developer" class="section section--developer">
+            <div class="container dev">
+                <img src="./Assets/Img/foto-presentación-personal.jpeg" alt="Desarrollador" class="dev__avatar">
+                <div class="dev__info">
+                    <h2 class="section__title">Desarrollador - Orozco Adrián Dev.</h2>
+                    <p class="section__text">¡Hola! Soy desarrollador Full Stack y el creador detrás de BroTrack. Me especializo en diseñar y construir soluciones web de principio a fin, integrando arquitecturas de base de datos sólidas y lógica de servidor en el backend con interfaces de usuario intuitivas, modernas y fluidas en el frontend. Mi enfoque está centrado en transformar problemas reales del día a día en herramientas digitales ágiles, funcionales y con código de alta calidad.</p>
+                    <strong><p class="section__text">¿Deseas saber más sobre mis proyectos? <a href="https://github.com/orozcoadrian-dev" class="link" target="_blank" title="Mi GitHub">Visítame</a>.</p></strong>
+                    
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer__inner">
+            <div class="footer__brand">BroTrack</div>
+            <nav class="footer__nav">
+                <a class="footer__link" href="#what">Qué hacemos</a>
+                <a class="footer__link" href="#history">Historia</a>
+                <a class="footer__link" href="#developer">Desarrollador</a>
+            </nav>
+            <div class="footer__copy">© <span id="year"></span> BroTrack — Todos los derechos reservados</div>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById('year').textContent = new Date().getFullYear();
+        const toggle = document.querySelector('.header__toggle');
+        const nav = document.querySelector('.nav');
+        toggle && toggle.addEventListener('click', () => nav.classList.toggle('nav--open'));
+    </script>
+
+</body>
+
+</html>
