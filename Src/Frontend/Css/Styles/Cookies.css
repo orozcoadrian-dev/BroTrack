@@ -1,0 +1,338 @@
+:root {
+    --cookies-max-width: 760px;
+    --cookies-bg: #f9fafb;
+    --cookies-surface: #ffffff;
+    --cookies-transition: all 0.22s ease;
+    --cookies-border: rgba(20, 184, 166, 0.14);
+    --cookies-accent: var(--color-primary);
+    --cookies-num-size: 2.4rem;
+}
+
+.cookies-nav 
+{
+    position: sticky;
+    top: 0;
+    z-index: 50;
+    background: linear-gradient(180deg,
+            rgba(255, 255, 255, 0.88) 0%,
+            rgba(255, 255, 255, 0.72) 100%);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    border-bottom: 1px solid rgba(20, 184, 166, 0.10);
+    box-shadow: 0 2px 12px rgba(20, 24, 28, 0.05);
+}
+
+.cookies-nav__inner 
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    max-width: var(--max-width);
+    margin: 0 auto;
+    padding: 0.65rem var(--container-padding);
+}
+
+.cookies-nav__logo-link 
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    text-decoration: none;
+}
+
+.cookies-nav__logo 
+{
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2.5px solid var(--cookies-accent);
+    box-shadow: 0 0 0 4px rgba(20, 184, 166, 0.10);
+    transition: var(--cookies-transition);
+    display: block;
+}
+
+.cookies-nav__logo:hover {
+    box-shadow: 0 0 0 7px rgba(20, 184, 166, 0.15);
+    transform: scale(1.05);
+}
+
+.cookies-nav__actions 
+{
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.cookies-nav__btn 
+{
+    font-size: 0.875rem;
+    padding: 0.5rem 0.9rem;
+}
+
+.cookies-nav__btn-icon 
+{
+    flex-shrink: 0;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.cookies-main 
+{
+    background: var(--cookies-bg);
+    padding: 2.5rem var(--container-padding) 4rem;
+    overflow: visible;
+}
+
+.cookies-main__wrapper 
+{
+    max-width: var(--cookies-max-width);
+    margin: 0 auto;
+    animation: fadeUp 0.45s ease both;
+}
+
+.cookies-header 
+{
+    margin-bottom: 1.8rem;
+    padding-left: 0.25rem;
+}
+
+.cookies-header__badge 
+{
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    background: rgba(20, 184, 166, 0.10);
+    color: var(--cookies-accent);
+    font-size: 0.78rem;
+    font-weight: 700;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    padding: 0.3rem 0.75rem;
+    border-radius: 999px;
+    margin-bottom: 0.9rem;
+    border: 1px solid rgba(20, 184, 166, 0.18);
+}
+
+.cookies-header__title 
+{
+    font-family: var(--font-heading);
+    font-size: clamp(1.35rem, 3.5vw, 1.75rem);
+    color: var(--color-dark);
+    text-transform: uppercase;
+    letter-spacing: 0.02em;
+    margin-bottom: 0.45rem;
+}
+
+.cookies-header__subtitle 
+{
+    color: var(--color-muted);
+    font-size: 0.92rem;
+    line-height: 1.65;
+    max-width: 58ch;
+}
+
+.cookies-card 
+{
+    background: var(--cookies-surface);
+    border-radius: var(--radius);
+    padding: 2rem 2.2rem;
+    box-shadow: var(--shadow-soft);
+    border: 1px solid rgba(20, 184, 166, 0.08);
+    overflow: visible;
+}
+
+.cookies-list 
+{
+    list-style: none;
+    counter-reset: none;
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    margin: 0;
+    padding: 0;
+    height: auto;
+    overflow: visible;
+}
+
+.cookies-list__item 
+{
+    display: flex;
+    align-items: flex-start;
+    gap: 1.2rem;
+    padding: 1.5rem 0;
+    border-bottom: 1px solid var(--cookies-border);
+    transition: background 0.15s ease;
+}
+
+.cookies-list__item:last-child 
+{
+    border-bottom: none;
+    padding-bottom: 0;
+}
+
+.cookies-list__item:first-child 
+{
+    padding-top: 0;
+}
+
+.cookies-list__item:hover .cookies-list__number 
+{
+    background: var(--cookies-accent);
+    color: #fff;
+    transform: scale(1.05);
+}
+
+.cookies-list__number 
+{
+    flex-shrink: 0;
+    width: var(--cookies-num-size);
+    height: var(--cookies-num-size);
+    border-radius: 8px;
+    background: rgba(20, 184, 166, 0.08);
+    color: var(--cookies-accent);
+    font-family: var(--font-heading);
+    font-size: 0.78rem;
+    font-weight: 700;
+    letter-spacing: 0.04em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: var(--cookies-transition);
+    user-select: none;
+    margin-top: 0.15rem;
+}
+
+.cookies-list__content 
+{
+    flex: 1;
+    min-width: 0;
+}
+
+.cookies-list__title 
+{
+    font-family: var(--font-heading);
+    font-size: 0.97rem;
+    color: var(--color-dark);
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.015em;
+    margin-bottom: 0.35rem;
+}
+
+.cookies-list__text 
+{
+    color: var(--color-muted);
+    font-size: 0.9rem;
+    line-height: 1.7;
+    text-align: justify;
+}
+
+.cookies-footer 
+{
+    border-top: 1px solid rgba(34, 34, 34, 0.06);
+    padding: 0.9rem 0;
+    background: var(--cookies-surface);
+}
+
+.cookies-footer__inner 
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    flex-wrap: wrap;
+    max-width: var(--max-width);
+    margin: 0 auto;
+    padding: 0 var(--container-padding);
+}
+
+.cookies-footer__copy 
+{
+    font-size: 0.8rem;
+    color: var(--color-muted);
+}
+
+.cookies-footer__links 
+{
+    display: flex;
+    align-items: center;
+    gap: 0.2rem;
+}
+
+.cookies-footer__link 
+{
+    font-size: 0.8rem;
+    color: var(--color-muted);
+    margin-left: 0.6rem;
+    transition: color 0.15s ease;
+}
+
+.cookies-footer__link:hover 
+{
+    color: var(--cookies-accent);
+}
+
+@media (max-width: 680px)
+{
+    .cookies-card 
+    {
+        padding: 1.4rem 1.1rem;
+    }
+
+    .cookies-nav__btn 
+    {
+        font-size: 0.8rem;
+        padding: 0.45rem 0.7rem;
+    }
+
+    .cookies-footer__inner 
+    {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 0.4rem;
+    }
+
+    .cookies-footer__link 
+    {
+        margin-left: 0;
+    }
+}
+
+@media (max-width: 420px) 
+{
+    .cookies-header__title 
+    {
+        font-size: 1.2rem;
+    }
+
+    .cookies-main 
+    {
+        padding: 1.5rem var(--container-padding) 2.5rem;
+    }
+
+    .cookies-list__item 
+    {
+        gap: 0.85rem;
+    }
+
+    .cookies-list__number 
+    {
+        --cookies-num-size: 2.1rem;
+        font-size: 0.72rem;
+    }
+
+    .cookies-nav__actions 
+    {
+        gap: 0.3rem;
+    }
+
+    .cookies-nav__btn 
+    {
+        font-size: 0.75rem;
+        padding: 0.4rem 0.55rem;
+    }
+}

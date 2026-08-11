@@ -1,0 +1,27 @@
+@import url("./Font.css");
+
+/* Variables de colores y tipografías */
+:root {
+	/* Colores */
+	--color-primary: #14B8A6;
+	--color-white: #ffffff;
+	--color-dark: #222222;
+	--color-muted: #6b7280;
+
+	/* Tipografías (asegúrate que Font.css declare las familias usadas) */
+	--font-sans: 'BroTrack-Regular', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+	--font-heading: 'BroTrack-Bold', var(--font-sans);
+
+	/* Espaciado */
+	--container-padding: 1rem;
+	--max-width: 1100px;
+
+	/* Sombras y radio */
+	--radius: 12px;
+	--shadow-soft: 0 8px 24px rgba(20,24,28,0.08);
+}
+
+@media (prefers-reduced-motion: reduce) {
+	:root { scroll-behavior: auto; }
+}
+

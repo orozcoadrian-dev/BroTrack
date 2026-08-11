@@ -1,0 +1,23 @@
+/* Fuente destinada para textos especiales */
+@font-face {
+    font-family: 'BroTrack-Light';
+    src: url('../../Assets/Fonts/Inter_24pt-Light.ttf') format('truetype');
+}
+
+/* Fuente destinada para textos regulares */
+@font-face {
+    font-family: 'BroTrack-Regular';
+    src: url('../../Assets/Fonts/Inter_24pt-Regular.ttf') format('truetype');
+}
+
+/* Fuente destinada para textos resaltados e importantes */
+@font-face {
+    font-family: 'BroTrack-Bold';
+    src: url('../../Assets/Fonts/Inter_24pt-Bold.ttf') format('truetype');
+}
+
+/* Fuente destinada para textos súper importantes */
+@font-face {
+    font-family: 'BroTrack-ExtraBold';
+    src: url('../../Assets/Fonts/Inter_24pt-ExtraBold.ttf') format('truetype');
+}
