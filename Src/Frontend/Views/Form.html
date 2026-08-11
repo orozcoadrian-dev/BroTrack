@@ -34,7 +34,7 @@
                     Atrás
                 </button>
                 
-                <button type="button" class="btn btn--ghost form-nav__btn" id="btn-terms">
+                <button type="button" class="btn btn--ghost form-nav__btn" id="btn-terms" onclick="window.location.href='./Cookies.html'">
                     <svg class="form-nav__btn-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
                         <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/>
                     </svg>
@@ -195,12 +195,10 @@
                         ></textarea>
                     </div>
 
-                    <!-- Nota de campos obligatorios -->
                     <p class="form__note">
                         <span class="form__required" aria-hidden="true">*</span> Algunos campos son obligatorios
                     </p>
 
-                    <!-- Botón enviar -->
                     <div class="form__actions">
                         <button type="submit" class="btn btn--primary form__submit" id="btn-submit">
                             <svg class="form-nav__btn-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
@@ -211,12 +209,11 @@
                     </div>
 
                 </form>
-            </div><!-- /.form-card -->
+            </div>
 
         </div>
     </main>
 
-    <!-- ===================== FOOTER ===================== -->
     <footer class="form-footer" role="contentinfo">
         <div class="form-footer__inner container">
             <p class="form-footer__copy">
@@ -224,14 +221,12 @@
             </p>
             <nav class="form-footer__links" aria-label="Pie de página">
                 <a href="#" class="footer__link form-footer__link">Privacidad</a>
-                <a href="#" class="footer__link form-footer__link" id="footer-terms">Términos</a>
+                <a href="./Cookies.html" class="footer__link form-footer__link" id="footer-terms">Términos</a>
             </nav>
         </div>
     </footer>
 
-    <script>
-        document.getElementById('year').textContent = new Date().getFullYear();
-    </script>
+    <script src="../Js/form.js"></script>
 
 </body>
 </html>
