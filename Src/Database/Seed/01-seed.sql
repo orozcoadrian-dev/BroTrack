@@ -92,6 +92,42 @@ VALUES (
     'No fui convocado a trabajar'
 );
 
+INSERT INTO carrera(fecha,tipo,estado, mes, numero_quincena) 
+VALUES (
+	'2026-08-08',
+    'Ida',
+    'Realizada',
+    "Agosto",
+    "1"
+);
+
+INSERT INTO carrera(fecha,tipo,estado, mes, numero_quincena) 
+VALUES (
+	'2026-08-08',
+    'Vuelta',
+    'Realizada',
+    "Agosto",
+    "1"
+);
+
+INSERT INTO carrera(fecha,tipo,estado, mes, numero_quincena) 
+VALUES (
+	'2026-08-10',
+    'Ida',
+    'Realizada',
+    "Agosto",
+    "1"
+);
+
+INSERT INTO carrera(fecha,tipo,estado, mes, numero_quincena) 
+VALUES (
+	'2026-08-10',
+    'Vuelta',
+    'Realizada',
+    "Agosto",
+    "1"
+);
+
 
 -- Quitamos por un momento la seguridad de las actualizaciones para poder actualizar los datos de la tabla carrera
 SET SQL_SAFE_UPDATES = 0;
@@ -99,3 +135,4 @@ SET SQL_SAFE_UPDATES = 0;
 -- Actualizamos los datos en común que hacían falta en la tabla carrera, como el mes y el número de quincena (Ciclo) para poder calcular la cuenta de la quincena 1 o 2
 UPDATE carrera SET numero_quincena = "1";
 UPDATE carrera SET mes = "Agosto";
+
