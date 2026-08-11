@@ -110,6 +110,24 @@ VALUES (
     "1"
 );
 
+INSERT INTO carrera(fecha,tipo,estado, mes, numero_quincena) 
+VALUES (
+	'2026-08-10',
+    'Ida',
+    'Realizada',
+    "Agosto",
+    "1"
+);
+
+INSERT INTO carrera(fecha,tipo,estado, mes, numero_quincena) 
+VALUES (
+	'2026-08-10',
+    'Vuelta',
+    'Realizada',
+    "Agosto",
+    "1"
+);
+
 
 -- Quitamos por un momento la seguridad de las actualizaciones para poder actualizar los datos de la tabla carrera
 SET SQL_SAFE_UPDATES = 0;
